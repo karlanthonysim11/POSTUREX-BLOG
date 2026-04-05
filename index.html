@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTUREX - AI-Assisted Smart Chair System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">POSTUREX</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tech">Technology</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>POSTUREX<br><span>Smart Chair System</span></h1>
+                <p style="font-size: 1.1rem; font-weight: 500; color: var(--accent); margin-bottom: 0.8rem;">AI-Assisted Posture Monitoring for Healthier Sitting Habits</p>
+                <p>A revolutionary smart chair system that uses advanced sensors and AI-assisted analytics to monitor posture in real-time and provide intelligent feedback for better health.</p>
+                <div class="cta-buttons">
+                    <a href="#features" class="btn btn-primary">Explore Project</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <img class="hero-photo" src="posturex-prototype.png" alt="POSTUREX smart chair prototype with mobile app preview">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About the Project</h2>
+            <div class="about-content">
+                <div>
+                    <h3>The Problem</h3>
+                    <p>Poor posture due to prolonged sitting is a growing health concern, especially among students and office workers in Davao, Philippines.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">80%</div>
+                            <div>Students affected</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">65%</div>
+                            <div>Office workers</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Our Solution</h3>
+                    <ul>
+                        <li><strong>Non-wearable</strong> - No devices on body</li>
+                        <li><strong>Privacy-friendly</strong> - Local processing</li>
+                        <li><strong>Affordable</strong> - Under ₱3,000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">👀</span>
+                    </div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Continuous posture detection using 4 FSR sensors in 2x2 grid arrangement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">🧠</span>
+                    </div>
+                    <h3>AI Classification</h3>
+                    <p>Detects upright, slouched, and leaning postures with adaptive AI algorithms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📱</span>
+                    </div>
+                    <h3>Mobile Dashboard</h3>
+                    <p>Intuitive Android app with live data, alerts, and weekly analytics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📈</span>
+                    </div>
+                    <h3>Weekly Analytics</h3>
+                    <p>Track improvement over time with detailed posture reports and trends.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">🔔</span>
+                    </div>
+                    <h3>Smart Alerts</h3>
+                    <p>Gentle vibrations and app notifications for posture correction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📍</span>
+                    </div>
+                    <h4>1. Pressure Capture</h4>
+                    <p>Four FSR 402 sensors detect seat pressure patterns in real time.</p>
+                </div>
+                <div class="process-step">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📏</span>
+                    </div>
+                    <h4>2. Distance Check</h4>
+                    <p>The HC-SR04 sensor measures user distance and sitting presence.</p>
+                </div>
+                <div class="process-step">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">🧠</span>
+                    </div>
+                    <h4>3. Local Processing</h4>
+                    <p>ESP32 (NodeMCU/DevKit) analyzes posture data using rule-based logic.</p>
+                </div>
+                <div class="process-step">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📳</span>
+                    </div>
+                    <h4>4. Haptic Alert</h4>
+                    <p>A disc vibration motor gives instant correction feedback when posture is poor.</p>
+                </div>
+                <div class="process-step">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📶</span>
+                    </div>
+                    <h4>5. Wireless Sync</h4>
+                    <p>ESP32 sends posture status to the mobile app over Bluetooth.</p>
+                </div>
+                <div class="process-step">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📱</span>
+                    </div>
+                    <h4>6. Dashboard Insight</h4>
+                    <p>The app displays live posture state, alerts, and weekly trend summaries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="tech" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <span aria-hidden="true">⚙️</span>
+                    </div>
+                    <div>
+                        <h4>ESP32 Microcontroller</h4>
+                        <p>NodeMCU/DevKit for sensor reading, logic, and Bluetooth data transfer.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <span aria-hidden="true">📍</span>
+                    </div>
+                    <div>
+                        <h4>4x FSR 402 Sensors</h4>
+                        <p>Pressure sensing layer to detect sitting balance and posture shifts.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <span aria-hidden="true">📏</span>
+                    </div>
+                    <div>
+                        <h4>HC-SR04 Ultrasonic Sensor</h4>
+                        <p>Distance sensing for user presence and seated-position validation.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <span aria-hidden="true">📳</span>
+                    </div>
+                    <div>
+                        <h4>Haptic Driver Circuit</h4>
+                        <p>Disc vibration motor with 2N2222 transistor and 1N4001 diode protection.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <span aria-hidden="true">🔋</span>
+                    </div>
+                    <div>
+                        <h4>Power System</h4>
+                        <p>5V rechargeable power bank or 9V battery setup for portable use.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <span aria-hidden="true">📱</span>
+                    </div>
+                    <div>
+                        <h4>Android Mobile App</h4>
+                        <p>Real-time posture dashboard, alerts, and weekly analytics view.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="component-panel">
+                <h3>Hardware Components</h3>
+                <ul class="component-list">
+                    <li><strong>⚙️ ESP32 Microcontroller</strong><span>NodeMCU/DevKit board</span></li>
+                    <li><strong>📍 4x FSR 402 Sensors</strong><span>Pressure sensing array</span></li>
+                    <li><strong>📏 HC-SR04 Sensor</strong><span>Distance and presence detection</span></li>
+                    <li><strong>📳 Disc Vibration Motor</strong><span>Haptic posture feedback</span></li>
+                    <li><strong>🔌 2N2222 + 1N4001</strong><span>Motor driver and protection</span></li>
+                    <li><strong>🔋 Power Source</strong><span>5V power bank or 9V battery setup</span></li>
+                    <li><strong>🧩 Build Essentials</strong><span>Jumper wires, breadboard, velcro strips</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Concept -->
+    <section class="ai-concept">
+        <div class="container">
+            <h2 class="section-title">AI Technology</h2>
+            <div class="ai-panel-wrap">
+                <div class="ai-panel">
+                    <h3>Lightweight Rule-Based AI Engine</h3>
+                    <p><strong>Adaptive Thresholding:</strong> The system adjusts sensitivity based on user pressure patterns and sitting behavior.</p>
+                    <p><strong>Real-time Analysis:</strong> ESP32 processes sensor input continuously to detect posture changes immediately.</p>
+                    <p><strong>Three Posture Classes:</strong> Upright (good), Slouched (warning), and Leaning (alert) for actionable guidance.</p>
+                    <p class="ai-note"><em>Built for edge computing: fast response, low cost, and no cloud dependency.</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span aria-hidden="true">⚠️</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Dec 15, 2025</div>
+                        <h3>Why Poor Posture is a Silent Health Risk</h3>
+                        <p>Discover how bad sitting habits contribute to back pain, reduced productivity, and long-term health issues.</p>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span aria-hidden="true">📊</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Dec 20, 2025</div>
+                        <h3>How Smart Chairs Improve Productivity</h3>
+                        <p>Research shows good posture increases focus by 20% and reduces fatigue.</p>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span aria-hidden="true">🤖</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 5, 2026</div>
+                        <h3>AI in Everyday Health Monitoring</h3>
+                        <p>The future of preventive healthcare is here - edge AI for everyone.</p>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span aria-hidden="true">🎓</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 10, 2026</div>
+                        <h3>Posture Tips for Students</h3>
+                        <p>5 simple habits that will transform your study sessions.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Who Benefits?</h2>
+            <div class="benefits-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">🧑‍🎓</span>
+                    </div>
+                    <h3>Students</h3>
+                    <p>Better focus, less fatigue during long study sessions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">💼</span>
+                    </div>
+                    <h3>Office Workers</h3>
+                    <p>Reduced back/neck pain, improved productivity</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">🏫</span>
+                    </div>
+                    <h3>Schools</h3>
+                    <p>Healthier learning environment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">👥</span>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Posture awareness and prevention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI Preview -->
+    <section class="ui-preview">
+        <div class="container">
+            <h2 class="section-title">App Interface</h2>
+            <div class="ui-screens">
+                <div class="ui-screen">
+                    <h4>Live Dashboard</h4>
+                    <div style="height: 200px; background: linear-gradient(45deg, #f0f9ff, #e0f2fe); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-top: 1rem;">
+                        <div>
+                            <div style="font-size: 2rem; font-weight: 800; color: var(--accent);">✅ Upright</div>
+                            <div style="color: var(--text-secondary);">Perfect posture detected</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-screen">
+                    <h4>Posture Alert</h4>
+                    <div style="height: 200px; background: linear-gradient(45deg, #fef3c7, #fde68a); border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                        <div style="font-size: 3rem; color: #f59e0b;">⚠️</div>
+                        <div style="font-weight: 600; color: #92400e;">Slouching detected</div>
+                        <div style="font-size: 0.875rem; color: #a16207;">Sit up straight!</div>
+                    </div>
+                </div>
+                <div class="ui-screen">
+                    <h4>Weekly Analytics</h4>
+                    <div class="weekly-card">
+                        <div class="weekly-head">
+                            <span>Week 1</span>
+                            <span class="weekly-improve">+25% improvement</span>
+                        </div>
+                        <div class="weekly-metric">
+                            <span>Good posture time</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="weekly-bar">
+                            <div class="weekly-bar-fill"></div>
+                        </div>
+                        <div class="weekly-foot">Trend: Improving consistency day by day</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="Karl Anthony B. Sim.jpg" alt="Karl Anthony B. Sim">
+                    </div>
+                    <h3>Karl Anthony B. Sim</h3>
+                    <p class="team-role">Full Stack Developer</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="Leah Mae C. Pabro.jpg" alt="Leah Mae C. Pabro">
+                    </div>
+                    <h3>Leah Mae C. Pabro</h3>
+                    <p class="team-role">Technical Writer</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="aileen.png" alt="Aileen Polinio">
+                    </div>
+                    <h3>Aileen S. Polinio</h3>
+                    <p class="team-role">Capstone Adviser</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>POSTUREX</h3>
+                    <p>Capstone Research Project 2026</p>
+                    <p><strong>Assumption College of Davao</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Research Paper</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><strong>Team Posturex</strong></p>
+                    <p>Davao City, Philippines</p>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 2rem; color: rgba(255,255,255,0.6); border-top: 1px solid rgba(255,255,255,0.1);">
+                © 2026 POSTUREX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetSelector = this.getAttribute('href');
+                if (!targetSelector || targetSelector === '#') {
+                    return;
+                }
+
+                const target = document.querySelector(targetSelector);
+                if (!target) {
+                    return;
+                }
+
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(8, 14, 22, 0.98)';
+                header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.45)';
+            } else {
+                header.style.background = 'rgba(15, 20, 25, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Fade in on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, section').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
