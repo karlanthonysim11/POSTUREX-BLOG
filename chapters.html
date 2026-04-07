@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTUREX Chapters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">POSTUREX</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#chapter1">Chapter 1</a></li>
+                <li><a href="#chapter2">Chapter 2</a></li>
+                <li><a href="#chapter3">Chapter 3</a></li>
+                <li><a href="index.html#team">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding-top: 120px; padding-bottom: 70px;">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="margin: 0 auto;">
+                <h1>Research Chapters<br><span>Project Documentation</span></h1>
+                <p style="font-size: 1.05rem; font-weight: 500; color: var(--accent); margin-bottom: 0.8rem;">Chapter 1 to Chapter 3 in one dedicated page</p>
+                <p>The detailed research chapters for the POSTUREX system are organized here for easier reading, review, and navigation.</p>
+                <div class="cta-buttons" style="justify-content: center;">
+                    <a href="#chapter1" class="btn btn-primary">Start Reading</a>
+                    <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chapter1" class="chapter">
+        <div class="container">
+            <h2 class="section-title">Chapter 1: Introduction</h2>
+            <div class="chapter-content">
+                <h3>1.1 Background of the Study</h3>
+                <p>The continuous advancement of technology has significantly transformed the daily routines of individuals, particularly in educational and workplace environments. The widespread use of computers, smartphones, and digital platforms has resulted in prolonged sitting behavior among students and office workers. While these technologies improve productivity and efficiency, they also contribute to sedentary lifestyles, which are associated with various health-related issues, particularly those concerning posture.</p>
+
+                <p>Posture refers to the alignment and positioning of the body while sitting, standing, or performing tasks. Maintaining proper posture is essential for preserving musculoskeletal health, as it ensures correct spinal alignment, reduces strain on muscles and ligaments, and prevents long-term complications. However, many individuals lack awareness of their posture habits, especially during extended periods of sitting. As a result, improper posture such as slouching, leaning forward, or uneven weight distribution becomes common.</p>
+
+                <p>These poor posture habits may lead to musculoskeletal disorders including back pain, neck strain, shoulder discomfort, and fatigue. In academic settings such as Assumption College of Davao, students spend several hours seated in classrooms, libraries, and computer laboratories where ergonomic furniture is limited. The absence of posture monitoring mechanisms further contributes to the development of unhealthy sitting behaviors.</p>
+
+                <p>Various posture monitoring systems have been introduced to address this issue. Wearable devices, such as posture-correcting sensors, provide continuous monitoring but may cause discomfort and require consistent usage. Vision-based systems utilize cameras and computer vision algorithms; however, they raise privacy concerns, particularly in shared environments. Additionally, systems that rely on complex artificial intelligence models require significant computational resources and are not always practical for everyday use.</p>
+
+                <p>To address these limitations, this study proposes <strong>POSTUREX, an AI-assisted smart chair system</strong> that integrates sensor technology and mobile analytics to monitor posture in real time. The system uses force-sensitive resistor (FSR) sensors and an ultrasonic sensor connected to an ESP32 microcontroller to collect posture-related data. The collected data are processed using rule-based artificial intelligence with adaptive thresholding to classify posture into predefined categories.</p>
+
+                <p>The system is designed to provide real-time feedback, generate posture analytics, and promote awareness of healthy sitting behavior. By combining affordability, accessibility, and privacy, POSTUREX aims to serve as an effective solution for improving posture habits among students and other users.</p>
+
+                <h3>1.2 Statement of the Problem</h3>
+                <p>This study aims to address the issue of poor posture among individuals who spend prolonged periods sitting.</p>
+
+                <p>Specifically, the study seeks to answer the following questions:</p>
+                <ol>
+                    <li>How can a smart chair system be developed to effectively monitor posture using embedded sensors?</li>
+                    <li>How can posture be accurately classified into upright, slouched, and leaning positions using sensor data?</li>
+                    <li>How can a mobile application be designed to display posture data and provide real-time feedback?</li>
+                    <li>How effective is the sysem in promoting healthy sitting behavior among users?</li>
+                    <li>How acceptable is the system in terms of usability, functionality, and performance based on user evaluation?</li>
+                </ol>
+
+                <h3>1.3 Objectives of the Study</h3>
+
+                <div class="objectives-panel">
+                    <h4>General Objective</h4>
+                    <p>The general objective of this study is to design and develop an AI-assisted smart chair system that monitors posture and promotes healthy sitting behavior.</p>
+                </div>
+
+                <div class="objectives-panel">
+                    <h4>Specific Objectives</h4>
+                    <p>This study aims to:</p>
+                    <ol>
+                        <li>Develop a smart chair integrated with pressure sensors and an ultrasonic sensor</li>
+                        <li>Design and implement a mobile application for real-time posture monitoring</li>
+                        <li>Classify posture into upright, slouched, and leaning positions with at least 85% accuracy</li>
+                        <li>Provide real-time alerts and feedback for improper posture</li>
+                        <li>Generate posture analytics including daily summaries and weekly reports</li>
+                        <li>Evaluate the system's usability, functionality, and performance through user acceptance testing</li>
+                    </ol>
+                </div>
+
+                <h3>1.4 Significance of the Study</h3>
+                <p>This study provides significant benefits to various stakeholders:</p>
+                <ul>
+                    <li><strong>Students</strong> – Enhances posture awareness and reduces discomfort during long study sessions</li>
+                    <li><strong>Office Workers</strong> – Promotes proper sitting posture and reduces work-related fatigue</li>
+                    <li><strong>Educational Institutions</strong> – Encourages ergonomic practices and healthier learning environments</li>
+                    <li><strong>Researchers and Developers</strong> – Provides a foundation for future innovations in sensor-based monitoring systems</li>
+                    <li><strong>Community</strong> – Contributes to improved health awareness and lifestyle practices</li>
+                </ul>
+
+                <h3>1.5 Scope and Delimitation</h3>
+                <div class="scope-delimit">
+                    <h4>Scope</h4>
+                    <p>The study focuses on the design and development of a smart chair-based posture monitoring system that integrates hardware and software components. The system includes FSR sensors, an ultrasonic sensor, an ESP32 microcontroller, and an Android mobile application.</p>
+
+                    <h4>Delimitation</h4>
+                    <p>The system is limited to:</p>
+                    <ul>
+                        <li>Monitoring posture only while seated</li>
+                        <li>Android platform only</li>
+                        <li>Rule-based AI (no deep learning)</li>
+                        <li>Non-medical usage</li>
+                    </ul>
+                </div>
+
+                <h3>1.6 Time and Place of the Study</h3>
+                <p>The study will be conducted from February 2026 to September 2026 at Assumption College of Davao.</p>
+
+                <h3>1.7 Conceptual Framework (IPO Model)</h3>
+                <p>The system follows an Input-Process-Output (IPO) model as illustrated below:</p>
+                <div class="ipo-diagram">
+                    <div class="ipo-section input-section">
+                        <div class="ipo-header">INPUT</div>
+                        <ul>
+                            <li>📍 Pressure Data from FSR Sensors</li>
+                            <li>📏 Distance Data from Ultrasonic Sensor</li>
+                            <li>⏱️ User Session Data (Time, Duration)</li>
+                        </ul>
+                    </div>
+                    <div class="ipo-arrow">→</div>
+                    <div class="ipo-section process-section">
+                        <div class="ipo-header">PROCESS</div>
+                        <ul>
+                            <li>📊 Data Collection (Sensor Reading)</li>
+                            <li>⚙️ Data Processing (ESP32)</li>
+                            <li>🧠 AI-Assisted Rule-Based Analysis (Posture Classification)</li>
+                            <li>💾 Data Storage</li>
+                        </ul>
+                    </div>
+                    <div class="ipo-arrow">→</div>
+                    <div class="ipo-section output-section">
+                        <div class="ipo-header">OUTPUT</div>
+                        <ul>
+                            <li>📳 Real-Time Posture Alerts</li>
+                            <li>📱 Mobile Dashboard Display</li>
+                            <li>📊 Daily and Weekly Status Reports</li>
+                            <li>💡 Recommendations for Posture Improvement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chapter2" class="chapter">
+        <div class="container">
+            <h2 class="section-title">Chapter 2: Review of Related Literature, Studies and Systems</h2>
+            <div class="chapter-content">
+                <p style="background: linear-gradient(135deg, rgba(0, 212, 212, 0.1), rgba(0, 168, 168, 0.05)); padding: 1.5rem; border-left: 4px solid var(--accent); border-radius: 8px; margin-bottom: 2rem; color: var(--text);">
+                    <strong>Objective:</strong> The objective of this chapter is to review the recent literature, studies, and existing systems related to posture monitoring as a body area network based on technology. The section will also review the literature focusing on posture monitoring technologies, sensor-based posture devices, and artificial intelligence applications for posture analysis. All studies reviewed have been published between 2020 and 2025 and represent recent advancements in technology.
+                </p>
+
+                <h3>2.1 Sensor-Based Sitting Posture Monitoring System</h3>
+                <p>A smart system that utilizes pressure sense arrays located in a seat to monitor the user's sitting postures has been produced by Osozola (2025). By capturing pressure distribution data as a result of the body weight applied to the chair, the system uses machine learning methods to analyze the data from the pressure sensors and classify various sitting postures. From the research conducted on the smart system, it was discovered that the smart system was capable of identifying multiple postures and providing feedback regarding the posture's improvement. It is believed by the researcher that pressure-based monitoring systems are effective because the system is capable of continual monitoring of sitting postures without the need for the user to wear additional monitoring devices.</p>
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="Figure 2.1.png" alt="Figure 2.1: Sensor-based sitting posture monitoring system using pressure sensors" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0, 212, 212, 0.3); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);">
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-secondary);">
+                        <strong>Figure 2.1:</strong> Sensor-based sitting posture monitoring system using pressure sensors
+                    </p>
+                </div>
+
+                <h3>2.2 Deep Learning-Based Sitting Posture Recognition</h3>
+                <p>Wang et al (2023) developed a deep-learning-based regularization method for detecting whether a person is sitting upright or not, based on the pressure distribution recorded by a pressure sensing mat placed under their chair. By utilizing convolutional neural networks to analyze the pressure data, a high level of classification accuracy was achieved, allowing for accurate classification of poor postures (i.e., slouched or leaned). The results of the study provide evidence that integrating pressure sensors with deep learning methods will enhance the accuracy and effectiveness of posture monitoring systems.</p>
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="Figure 2.2.png" alt="Figure 2.2: Deep learning posture recognition system using pressure sensing mat" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0, 212, 212, 0.3); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);">
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-secondary);">
+                        <strong>Figure 2.2:</strong> Deep learning posture recognition system using pressure sensing mat
+                    </p>
+                </div>
+
+                <h3>2.3 IoT-Based Smart Chair for Posture Monitoring</h3>
+                <p>Abilis and Sevila (2023) developed an Internet of Things (IoT)-based smart chair system that uses a microcontroller that precisely monitors the posture data collected from embedded sensors in the chair that sends the information to a monitoring application to check and analyze the user posture behavior. The system warns the user when it detects a wrong posture and urges them to correct it. <strong>Conclusion:</strong> An IoT-based posture monitoring system approach can help people to become more ergonomic and healthier and after a greater extent of posture-related discomfort.</p>
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="Figure 2.3.png" alt="Figure 2.3: IoT-based smart chair posture monitoring system architecture" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0, 212, 212, 0.3); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);">
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-secondary);">
+                        <strong>Figure 2.3:</strong> IoT-based smart chair posture monitoring system architecture
+                    </p>
+                </div>
+
+                <h3>2.4 Portable Sitting Posture Monitoring System</h3>
+                <p>Rao et al (2022) introduced a portable posture monitoring system that classifies various sitting postures through machine learning algorithms. The system employs embedded sensors to capture body orientation and any motion of the posture while the individual is seated. The authors claimed that the system achieved 94.3% accuracy in the classification of sitting postural postures. These results demonstrate the potential of portable systems to deliver real-time feedback on postures effectively.</p>
+
+                <h3>2.5 Vision-Based Posture Monitoring System</h3>
+                <p>A vision-based posture monitoring system was developed that relies on computer vision and machine learning techniques to analyze sitting posture through image processing and pose estimation algorithms. In this method, cameras are used to support the posture of the user, and the system analyzes body joint coordinates to determine if the posture is correct or deviated from positive alignment. Vision-based posture monitoring systems can achieve high accuracy in detecting deviations of postures by analyzing skeletal key points and alignment of bodies. However, it is maintained that such systems need modification of cameras under controlled environmental conditions, which may bring up privacy issues hence limiting its usage in classrooms or offices.</p>
+
+                <h3>2.6 Wearable Posture Monitoring System</h3>
+                <p>Non-wearable body posture monitoring systems utilize inertial-attached sensors like IMU, accelerometers, and gyroscopes to track body orientation and spinal alignment in wearable posture monitoring. These wearable sensors are originally placed in the user to monitor the spinal angle and detecting deviations in postures. These wearable systems continuously monitor posture behavior in real-time by measuring changes in movement and positioning of the body through inertial sensing technologies. When it detects poor posture, the system can provide feedback or alerts to motivate a user to change their posture. Studies indicate that accurate tracking of postures is achievable with wearable devices which also assist users in correcting their habits over time (Yang et al, 2024). Yet such devices might turn uncomfortable, expensive, and only on the compliance of users since they work only if a user keeps wearing the device.</p>
+
+                <h3>2.7 Non-Wearable Posture Monitoring System</h3>
+                <p>EggGuard was introduced by Mahendran et al (2025) as a non-wearable posture monitoring system. It is designed to detect sitting postures using force-sensing resistors placed inside the seat cushion as part of the sensor data collected by machine learning algorithms to classify conditions of the posture and deviations from normal postures. Feedback is also provided in the system to motivate users in changing their bad habits including postures. The findings of this study indicated that such non-wearable systems can be considered practical because they help collect reliable information and usage of posture.</p>
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="Figure 2.6.png" alt="Figure 2.6: Non-wearable posture monitoring system using force sensors" style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0, 212, 212, 0.3); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);">
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-secondary);">
+                        <strong>Figure 2.6:</strong> Non-wearable posture monitoring system using force sensors
+                    </p>
+                </div>
+
+                <h3>2.8 Sitting Posture Recognition System Review</h3>
+                <p>Nabaorl et al (2024) carried out an in-depth review of the technologies employed in contemporary posture monitoring systems for posture recognition. The study examined wearable sensors, pressure sensors, and computer vision technologies used in posture detection. The authors concluded that embedded monitoring systems represent one of the most practical approaches to posture monitoring, as they enable accurate detection of postures while ensuring comfort for the user.</p>
+
+                <h3>2.9 Intelligent Pressure Sensor Posture Monitoring System</h3>
+                <p>Ang et al (2023) introduced a smart posture monitoring system based on pressure sensing mats interfaced with a microcontroller to identify posture conditions. The system analyzes pressure distributions which is the basis to identify the posture type. The study results confirmed that the pressure sensing technologies could reliably detect changes in postures and posture-based smart systems provide practical solutions for real-time posture monitoring.</p>
+
+                <h3>2.10 Real-Time Posture Monitoring System</h3>
+                <p>A systematic review conducted in 2024 examined several real-time posture monitoring systems based on various posture detection approaches and proposed monitoring methods. Based on multiple detection approaches including smart chairs, wearable devices, and computer vision systems combined with intelligent algorithms provide the most practical solutions for real-time posture monitoring. From the reviewed studies, posture monitoring commonly uses pressure sensors, wearable devices, and computer vision techniques to detect postures. However, some current systems present specific issues such as accuracy limitations, wearable devices that may cause discomfort, or cameras that raise privacy concerns. Therefore, the proposed POSTUREX system aims to develop a practical, affordable, and privacy-friendly system with distance sensors integrated with a mobile application to provide real-time feedback on postures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="chapter3" class="chapter">
+        <div class="container">
+            <h2 class="section-title">Chapter 3: Methodology</h2>
+            <div class="chapter-content">
+                <h3>3.1 Software Development Framework</h3>
+                <p>This study utilized the Agile-Scrum methodology under the Software Development Life Cycle (SDLC) in the development of the POSTUREX system. Agile-Scrum is an iterative and incremental approach that enables continuous system development, testing, and refinement through short development cycles known as sprints.</p>
+
+                <p>Unlike traditional development models such as the Waterfall Model, which follows a linear sequence of phases, Agile-Scrum allows flexibility and adaptability throughout the development process. This approach is suitable for the POSTUREX system since it involves both hardware integration, including sensors and microcontroller components, and software development, such as the mobile application and analytics features. These components require continuous adjustments and improvements to achieve optimal performance and usability.</p>
+
+                <p>The Agile-Scrum methodology allows the researchers to develop the system in incremental stages, identify and resolve issues early, incorporate user feedback, and ensure that the final system meets the intended functionality and performance requirements.</p>
+
+                <h3>3.1.1 Software Process Model</h3>
+                <p>The Scrum Agile process model was implemented to structure the system development. The model follows an iterative cycle consisting of product backlog creation, sprint planning, sprint execution, sprint review, and sprint retrospective.</p>
+
+                <p>Each sprint produces a working version of the system that is tested and evaluated. Feedback from each sprint is used to improve subsequent iterations, ensuring continuous enhancement of system performance and functionality.</p>
+                <figure class="chapter-figure">
+                    <img src="Figure 3.1.png" alt="Figure 3.1: Scrum Agile process model for POSTUREX">
+                    <figcaption><strong>Figure 3.1:</strong> Illustrates the Agile-Scrum process model used in the development of the POSTUREX system. The process consists of six phases: requirements, design, development, testing, deployment, and review. These phases are continuously repeated in cycles to improve the system and ensure that all functionalities are properly implemented and refined.</figcaption>
+                </figure>
+
+                <h3>3.1.2 Scrum Roles</h3>
+                <p>The Agile-Scrum framework defines key roles that contribute to the success of the project:</p>
+                <ul>
+                    <li><strong>Product Owner</strong> – Responsible for defining system requirements and prioritizing features based on user needs.</li>
+                    <li><strong>Scrum Master</strong> – Ensures that the Agile process is followed and resolves any issues encountered during development.</li>
+                    <li><strong>Development Team</strong> – Responsible for designing, building, and testing the system, including hardware integration and software development.</li>
+                </ul>
+
+                <h3>3.1.3 Product Backlog</h3>
+                <p>The Product Backlog is a prioritized list of system features and functionalities required for the POSTUREX system. These features serve as the foundation for development and are organized based on importance and implementation priority.</p>
+
+                <p>The Product Backlog includes system setup, sensor integration, mobile application development, posture classification, alert system, and report generation.</p>
+                <figure class="chapter-figure">
+                    <img src="Figure 3.2.png" alt="Figure 3.2: Product backlog for the POSTUREX system">
+                    <figcaption><strong>Figure 3.2:</strong> Presents the product backlog of the POSTUREX system, which includes all prioritized features necessary for system development. Tasks are organized based on priority to guide sprint planning and ensure that essential features are developed first.</figcaption>
+                </figure>
+
+                <h3>3.3.2 Economic Feasibility</h3>
+                <p>The system is cost-effective as it uses affordable hardware components and open-source software.</p>
+
+                <h3>3.3.3 Operational Feasibility</h3>
+                <p>The system is easy to use and suitable for students and office workers.</p>
+
+                <h3>3.3.4 Schedule Feasibility</h3>
+                <p>The system can be completed within the given timeframe using Agile methodology.</p>
+
+                <h3>3.4 System Architecture</h3>
+                <p>The POSTUREX system consists of three main components: sensors, ESP32 microcontroller, and mobile application. These components work together to collect, process, and display posture data.</p>
+                <figure class="chapter-figure">
+                    <img src="Figure 3.3.png" alt="Figure 3.3: System architecture of POSTUREX">
+                    <figcaption><strong>Figure 3.3:</strong> Shows the system architecture of POSTUREX. Sensor data is collected and processed by the ESP32 microcontroller and transmitted via Bluetooth to the mobile application, where it is analyzed and displayed to the user.</figcaption>
+                </figure>
+
+                <h3>3.5 System Process Flow</h3>
+                <p>The system process describes the sequence of operations from data collection to output generation.</p>
+                <figure class="chapter-figure chapter-figure--compact">
+                    <img src="Figure 3.4.png" alt="Figure 3.4: System process flow of POSTUREX">
+                    <figcaption><strong>Figure 3.4:</strong> Illustrates the step-by-step operation of the POSTUREX system. The process begins with detecting posture using sensors, followed by data processing, storage, transfer, and analysis, until the results are displayed to the user.</figcaption>
+                </figure>
+
+                <h3>3.6 AI-Assisted Approach</h3>
+                <p>The POSTUREX system uses a rule-based artificial intelligence approach with adaptive thresholding to classify posture.</p>
+                <figure class="chapter-figure">
+                    <img src="Figure 3.5.png" alt="Figure 3.5: AI-assisted posture classification approach">
+                    <figcaption><strong>Figure 3.5:</strong> Presents the AI-assisted posture classification model. The system collects sensor data, applies rule-based processing to extract features, classifies posture into predefined categories, and generates feedback and recommendations that are displayed through the mobile application.</figcaption>
+                </figure>
+
+                <h3>3.7 Testing Procedure</h3>
+                <p>User Acceptance Testing (UAT) was conducted to evaluate the system using a Likert scale.</p>
+
+                <h3>3.8 Data Analysis</h3>
+                <p>The collected data were analyzed using mean scores and graphical representations.</p>
+
+                <h3>3.9 Ethical Considerations</h3>
+                <p>The study ensures privacy, voluntary participation, and confidentiality of user data.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+        <div class="image-modal__content" role="dialog" aria-modal="true" aria-label="Image preview">
+            <button class="image-modal__close" id="imageModalClose" type="button" aria-label="Close image preview">&times;</button>
+            <img id="imageModalImg" alt="">
+            <div class="image-modal__caption" id="imageModalCaption"></div>
+        </div>
+    </div>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">👀</span>
+                    </div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Continuous posture detection using 4 FSR sensors in 2x2 grid arrangement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">🧠</span>
+                    </div>
+                    <h3>AI Classification</h3>
+                    <p>Detects upright, slouched, and leaning postures with adaptive AI algorithms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📱</span>
+                    </div>
+                    <h3>Mobile Dashboard</h3>
+                    <p>Intuitive Android app with live data, alerts, and weekly analytics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">📈</span>
+                    </div>
+                    <h3>Weekly Analytics</h3>
+                    <p>Track improvement over time with detailed posture reports and trends.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span aria-hidden="true">🔔</span>
+                    </div>
+                    <h3>Smart Alerts</h3>
+                    <p>Gentle vibrations and app notifications for posture correction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>POSTUREX</h3>
+                    <p>Capstone Research Project 2026</p>
+                    <p><strong>Assumption College of Davao</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Research Paper</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><strong>Team Posturex</strong></p>
+                    <p>Davao City, Philippines</p>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 2rem; color: rgba(255,255,255,0.6); border-top: 1px solid rgba(255,255,255,0.1);">
+                © 2026 POSTUREX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+        <div class="image-modal__content" role="dialog" aria-modal="true" aria-label="Image preview">
+            <button class="image-modal__close" id="imageModalClose" type="button" aria-label="Close image preview">&times;</button>
+            <img id="imageModalImg" alt="">
+            <div class="image-modal__caption" id="imageModalCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
